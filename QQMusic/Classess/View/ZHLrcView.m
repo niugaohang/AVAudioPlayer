@@ -44,7 +44,7 @@
     tableView.translatesAutoresizingMaskIntoConstraints = NO;
     tableView.backgroundColor = [UIColor clearColor];
     tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-    tableView.rowHeight = 35;
+    tableView.rowHeight = 44;
     [self addSubview:tableView];
     self.tableView = tableView;
     
@@ -65,6 +65,8 @@
     
     // 设置多余的滑动区域
     self.tableView.contentInset = UIEdgeInsetsMake(self.bounds.size.height * 0.5, 0, self.bounds.size.height * 0.5, 0);
+     _tableView.backgroundColor = [UIColor clearColor];
+    _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
 }
 
 #pragma mark - 重写setLrcname的方法
@@ -93,7 +95,7 @@
     if (indexPath.row == self.currentIndex) {
         cell.lrcLabel.font = [UIFont systemFontOfSize:18];
     } else {
-        cell.lrcLabel.font = [UIFont systemFontOfSize:14.0];
+        cell.lrcLabel.font = [UIFont systemFontOfSize:16.0];
         cell.lrcLabel.progress = 0;
     }
     

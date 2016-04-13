@@ -17,8 +17,9 @@
     if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
         ZHLrcLabel *lrcLabel = [[ZHLrcLabel alloc] init];
         lrcLabel.textColor = [UIColor whiteColor];
-        lrcLabel.font = [UIFont systemFontOfSize:14.0];
+        lrcLabel.font = [UIFont systemFontOfSize:16.0];
         lrcLabel.textAlignment = NSTextAlignmentCenter;
+        lrcLabel.backgroundColor = [UIColor clearColor];
         [self.contentView addSubview:lrcLabel];
         _lrcLabel = lrcLabel;
         lrcLabel.translatesAutoresizingMaskIntoConstraints = NO;
